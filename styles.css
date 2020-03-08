@@ -14,7 +14,7 @@ header{
 #menu{
     display: flex;
     justify-content: center;
-    background-color: #ffc300;
+    background-color: #ffa100;
     color: black;
 }
 /*----------------------------------------
@@ -53,40 +53,76 @@ The flip box container - set the width and height to whatever you want. We have 
 
 /* Style the front side */
 .flip-box-front {
-    background-image: url("images/tarte_aux_maroilles_2.jpg");
     background-size: cover;
     color: black;
+    background-color: rgb(240,241,245);
     border-radius: 2px;
     box-shadow: 3px 5px 5px black;
 }
 
 /* Style the back side */
 .flip-box-back {
- /*   background-color: dodgerblue;*/
-    background-image: url("images/recette tarte maroilles/recette_maroille.jpg");
+    /*background-image: url("images/recette tarte maroilles/recette_maroille.jpg");*/
     background-size: 100%;
     background-color: #fff;
-    color: #333;
     transform: rotateY(180deg);
     border-radius: 2px;
     box-shadow: 3px 5px 5px black;
 }
-.fricadelleFF{
-    background-image: url("images/Fricadelles_1.jpg");
+
+.maroillesFB{
+    background-color: #333;
+    border: 2px solid white;
 }
 .fricadelleFB{
-    background-image: url("images/recette_fricadelle/recette_fricadelle.jpg");
+    background-color: #333;
+    border: 2px solid white;
 }
 .tarte_sucreFB{
-    background-image: url("images/recette_tarteAuSucre/recette_tarte_sucre-03.jpg");
+    background-color: #333;
+    border: 2px solid white;
+}
+.cramiqueFB{
+    background-color: #333;
+    border: 2px solid white;
+}
+.bieresFB{
+    background-color: #333;
+    border: 2px solid white;
+}
+.maroillesFF{
+    background-image: url("tarte_aux_maroilles_2.jpg");
+}
+.fricadelleFF{
+    background-image: url("Fricadelles_1.jpg");
 }
 .tarte_sucreFF{
-    background-image: url("images/Tarte_aux_sucre_2.jpg");
+    background-image: url("Tarte_aux_sucre_2.jpg");
 }
+.cramiqueFF{
+    background-image: url("le_cramique_1.jpg");
+}
+.bieresFF{
+    background-image: url("nos_bières_1.png");
+}
+.srcIMG{
+    font-family: "Open Sans",serif;
+    position: relative;
+    top: 180px;
+    right: 0;
+    left: 35px;
+    margin: auto;
+    border-radius: 30px;
+    font-size: 25px;
+    color:white;
+    width: 100%;
+    height: auto;
+}
+
 /*-----------------END of FLIP--------------------------*/
 .container_photo{
     display: flex;
-   justify-items: center;
+    justify-items: center;
     width: 600px;
     margin: 10px 0 0 10px;
 }
@@ -109,7 +145,6 @@ a{
 
 }
 a:hover{
-
     transition: .4s ease-in-out;
     background-color: #333333;
     color: white;
@@ -172,10 +207,10 @@ h3{
 #bouttonUP{
     float:right;
 }
-
+/*--------------------------------------------FOOTER--*/
 footer{
     background-color: #676767;
-      font-family: "Open Sans",serif;
+    font-family: "Open Sans",serif;
     font-size: 10px;
     letter-spacing: 2px;
     padding:30px;
@@ -185,5 +220,10 @@ footer{
     float: right;
     margin-top: -54px;
     margin-right: 70px;
+    font-size: 35px;
+    cursor: pointer;
+}
+.fab:hover, .far:hover{
+    color: white;
 }
 
